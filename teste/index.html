@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="materiais.html">Comprar Materiais</a></li>
+                    <li><a href="index.html">Menu Principal</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Lista de Compras</h1>
+
+        <form id="compra-form">
+            <input type="text" id="material-name" placeholder="Nome do Material" required>
+            <input type="text" id="material-price" placeholder="Preço" required>
+            <input type="number" id="material-quantity" placeholder="Quantidade" required min="1">
+            <button type="submit">Adicionar ao Carrinho</button>
+        </form>
+
+        <table id="item-table">
+            <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os itens serão inseridos aqui dinamicamente -->
+            </tbody>
+        </table>
+
+        <h3>Total Geral: R$ <span id="total-geral">0.00</span></h3>
+    </div>
+
+    <script src="script.js"></script> <!-- JS para a Página de Lista de Compras -->
+</body>
+</html>

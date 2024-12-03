@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Item</title>
+    <link rel="stylesheet" href="editar.css">
+</head>
+<body>
+    <h1>Editar Item</h1>
+
+<div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="lista.html">Lista de Compras</a></li>
+                <li><a href="index.html">Menu Principal</a></li>
+            </ul>
+        </nav>
+   </header>
+
+
+    <form id="compra-form">
+        <label for="material-name">Nome do Material:</label>
+        <input type="text" id="material-name" placeholder="Nome do Material" required>
+
+        <label for="material-price">Preço:</label>
+        <input type="text" id="material-price" placeholder="Preço do Material" required>
+
+        <label for="material-quantity">Quantidade:</label>
+        <input type="number" id="material-quantity" placeholder="Quantidade" required>
+
+        <button type="submit">Confirmar Edição</button>
+    </form>
+
+    <script src="editar.js"></script>
+</bod
